@@ -29,8 +29,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Solution URL](https://your-solution-url.com)
-- Live Site URL: [Live site URL](https://your-live-site-url.com)
+- Solution URL: [Solution URL](https://victoriatuady.github.io/Tip-Calculator-App/)
+- Live Site URL: [Live site URL](https://github.com/victoriatuady/Tip-Calculator-App.git)
 
 ## My process
 
@@ -45,4 +45,4 @@ Users should be able to:
 
 ## Author
 
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
+- Frontend Mentor - [@victoriatuady](https://www.frontendmentor.io/profile/victoriatuady)
