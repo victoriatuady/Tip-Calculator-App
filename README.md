@@ -26,6 +26,7 @@ Users should be able to:
 
 ![mobile view](design/mobile-view.png)
 ![desktop view](design/desktop-view.png)
+![calculated view](design/calculated-view.png)
 
 ### Links
 
