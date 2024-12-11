@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Frontend Mentor | Tip calculator app</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="img/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="main.js"></script>
+  </head>
+  <body>
+    <div id="logo">
+      <img src="img/logo.svg" alt="logo" />
+    </div>
+    <section class="container">
+      <section>
+        <div class="bill">
+          <p>Bill</p>
+          <img src="img/icon-dollar.svg" alt="icon" class="input-image" />
+          <input type="number" name="bill" id="bill" class="input" />
+        </div>
+        <div class="tip">
+          <p>Select Tip %</p>
+          <div class="tips">
+            <p>5%</p>
+            <p>10%</p>
+            <p>15%</p>
+            <p>25%</p>
+            <p>50%</p>
+            <input
+              type="number"
+              name="custom"
+              id="custom"
+              placeholder="Custom"
+              min="1"
+              max="100"
+            />
+          </div>
+        </div>
+        <div class="number">
+          <div>
+            <p>Number of People</p>
+            <p id="errorMsg">Can't be zero</p>
+          </div>
+          <img src="img/icon-person.svg" alt="icon" class="input-image" />
+          <input type="number" name="num" id="numOfPeople" class="input" />
+        </div>
+      </section>
+      <section class="section2">
+        <div class="totalAmount">
+          <div class="text">
+            <p>Tip Amount</p>
+            <span>/ person</span>
+          </div>
+          <p class="results" id="tipAmount">$0.00</p>
+        </div>
+        <div class="totalAmount">
+          <div class="text">
+            <p>Total</p>
+            <span>/ person</span>
+          </div>
+          <p class="results" id="total">$0.00</p>
+        </div>
+        <button type="reset" id="btn">Reset</button>
+      </section>
+    </section>
+  </body>
+</html>

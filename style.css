@@ -1,0 +1,220 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+
+/* || RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+/* || VARIABLES */
+:root {
+  --BGCOLOR: hsla(172, 67%, 45%, 0.253);
+  --ACTIVE-TEXT-COLOR: rgb(38, 192, 171);
+  --BOXCOLOR: hsl(183, 100%, 15%);
+  --TEXTCOLOR: hsl(186, 14%, 43%);
+  --TEXT-SPAN-COLOR: hsl(184, 14%, 56%);
+  --HOVERCOLOR: hsl(185, 41%, 84%);
+  --INPUTCOLOR: hsl(189, 41%, 97%);
+  --ERRORCOLOR: hsl(0, 100%, 74%);
+}
+
+/* || GENERAL STYLES */
+body {
+  font-family: "Space Mono", monospace;
+  font-size: 14px;
+  background-color: var(--BGCOLOR);
+  letter-spacing: 0.02em;
+
+  color: var(--TEXTCOLOR);
+  font-weight: 700;
+}
+
+#logo {
+  margin: 3.5rem 0 2rem 0;
+  display: grid;
+  place-content: center;
+}
+
+.container {
+  background-color: #fff;
+  padding: 1.5rem;
+  border-radius: 1.5rem 1.5rem 0 0;
+}
+
+.bill,
+.number {
+  position: relative;
+}
+
+.bill img,
+.number img {
+  max-width: 0.5rem;
+  position: absolute;
+  top: 60%;
+  left: 0.8rem;
+}
+
+.bill p,
+.number p {
+  margin-bottom: 0.3rem;
+}
+
+input[type="number"] {
+  font-size: 19px;
+  font-family: inherit;
+  font-weight: inherit;
+  direction: rtl;
+  border: none;
+  border-radius: 0.3rem;
+  width: 100%;
+  height: 2.5rem;
+  padding: 1rem;
+  background-color: var(--INPUTCOLOR);
+  color: var(--BOXCOLOR);
+}
+
+input[type="number"]:focus {
+  outline: none;
+  border: 2px solid var(--ACTIVE-TEXT-COLOR);
+  cursor: pointer;
+}
+
+.tip {
+  margin: 1.3rem 0;
+}
+
+.tips {
+  margin-top: 0.6rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.tips p {
+  font-size: 19px;
+  background-color: var(--BOXCOLOR);
+  height: 2.5rem;
+  color: #fff;
+  border-radius: 0.3rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.number div {
+  display: flex;
+  justify-content: space-between;
+}
+
+#errorMsg {
+  display: none;
+  color: var(--ERRORCOLOR);
+}
+
+.tips p:hover,
+button:hover {
+  background-color: var(--HOVERCOLOR);
+  color: var(--BOXCOLOR);
+  cursor: pointer;
+}
+
+.section2 {
+  padding: 2rem 1.5rem 1.5rem 1.5rem;
+  margin-top: 1rem;
+  background-color: var(--BOXCOLOR);
+  border-radius: 0.6rem;
+}
+
+.totalAmount {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1.2rem;
+}
+
+.text p {
+  color: #fff;
+}
+
+span {
+  color: var(--TEXT-SPAN-COLOR);
+  font-size: 12px;
+}
+
+.results {
+  font-size: 27px;
+  color: var(--ACTIVE-TEXT-COLOR);
+}
+
+button {
+  outline: none;
+  border: none;
+  border-radius: 0.3rem;
+  width: 100%;
+  height: 2.5rem;
+  font-size: 17px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  font-family: inherit;
+  font-weight: inherit;
+  color: var(--BOXCOLOR);
+  background-color: hsla(172, 67%, 45%, 0.438);
+}
+
+/* || MEDIA QUERIES */
+@media screen and (min-width: 768px) {
+  .container {
+    margin: 0 auto;
+    width: 55%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  #logo {
+    margin: 5rem 0 4rem 0;
+  }
+
+  .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+    width: 65%;
+    height: auto;
+    padding: 1.5rem;
+  }
+
+  .tips {
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 0.6rem;
+  }
+
+  #custom {
+    padding: 0.6rem;
+  }
+
+  .section2 {
+    margin: 0;
+  }
+
+  button {
+    margin-top: 4.5rem;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  #logo {
+    margin: 7rem 0 4rem 0;
+  }
+
+  .container {
+    width: 50%;
+    gap: 2rem;
+  }
+}
