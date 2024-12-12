@@ -78,3 +78,16 @@ numOfPeople.addEventListener("input", (e) => {
     button.style.backgroundColor = "#26c0ab";
   }
 });
+
+button.addEventListener("click", () => {
+  bill.value = "";
+  customInput.value = "";
+  numOfPeople.value = "";
+  tipAmount.textContent = "$0.00";
+  total.textContent = "$0.00";
+
+  tips.forEach((tip) => {
+    tip.style.backgroundColor = "#00494d";
+    tip.style.color = "#fff";
+  });
+});
