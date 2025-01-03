@@ -79,6 +79,7 @@ numOfPeople.addEventListener("input", (e) => {
   }
 });
 
+//RESET BUTTON
 button.addEventListener("click", () => {
   bill.value = "";
   customInput.value = "";

@@ -173,6 +173,7 @@ button {
   .container {
     margin: 0 auto;
     width: 55%;
+    border-radius: 1.5rem;
   }
 }
 
