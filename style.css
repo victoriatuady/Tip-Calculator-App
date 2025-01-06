@@ -27,7 +27,7 @@ img {
 /* || GENERAL STYLES */
 body {
   font-family: "Space Mono", monospace;
-  font-size: 14px;
+  font-size: 12px;
   background-color: var(--BGCOLOR);
   letter-spacing: 0.02em;
 
@@ -66,7 +66,7 @@ body {
 }
 
 input[type="number"] {
-  font-size: 19px;
+  font-size: 18px;
   font-family: inherit;
   font-weight: inherit;
   direction: rtl;
@@ -186,7 +186,7 @@ button {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 1.5rem;
-    width: 65%;
+    width: 60%;
     height: auto;
     padding: 1.5rem;
   }
@@ -215,7 +215,7 @@ button {
   }
 
   .container {
-    width: 50%;
+    width: 45%;
     gap: 2rem;
   }
 }
