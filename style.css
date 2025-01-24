@@ -45,6 +45,7 @@ body {
   background-color: #fff;
   padding: 1.5rem;
   border-radius: 1.5rem 1.5rem 0 0;
+  margin: auto;
 }
 
 .bill,
@@ -172,7 +173,7 @@ button {
 @media screen and (min-width: 768px) {
   .container {
     margin: 0 auto;
-    width: 55%;
+    max-width: 55%;
     border-radius: 1.5rem;
   }
 }
@@ -186,7 +187,7 @@ button {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 1.5rem;
-    width: 60%;
+    max-width: 55%;
     height: auto;
     padding: 1.5rem;
   }
@@ -215,7 +216,7 @@ button {
   }
 
   .container {
-    width: 45%;
+    max-width: 45%;
     gap: 2rem;
   }
 }
